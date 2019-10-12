@@ -1,0 +1,43 @@
+{
+  "name": "@fanfilmu/code-packager",
+  "version": "0.1.0",
+  "description": "Serverless Component for language-agnostic code packaging",
+  "main": "lib/main.js",
+  "module": "lib/main.module.js",
+  "repository": "https://github.com/fanfilmu/code-packager.git",
+  "author": "Michał Begejowicz",
+  "license": "MIT",
+  "private": false,
+  "typings": "lib/main.d.ts",
+  "scripts": {
+    "build": "rollup -c",
+    "lint": "eslint src/**/*.ts",
+    "test": "nyc -r lcov -e .ts -x \"*.test.ts\" mocha -r ts-node/register tests/**/*.test.ts"
+  },
+  "files": [
+    "lib/main.js",
+    "lib/main.module.js",
+    "lib/**/*.d.ts"
+  ],
+  "dependencies": {
+    "@serverless/core": "^1.0.0",
+    "rimraf": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.3",
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^12.7.12",
+    "@types/rimraf": "^2.0.2",
+    "@typescript-eslint/eslint-plugin": "^2.3.3",
+    "@typescript-eslint/parser": "^2.3.3",
+    "chai": "^4.2.0",
+    "eslint": "^6.5.1",
+    "glob": "^7.1.4",
+    "mocha": "^6.2.1",
+    "nyc": "^14.1.1",
+    "rollup": "^1.23.1",
+    "rollup-plugin-typescript2": "^0.24.3",
+    "ts-node": "^8.4.1",
+    "typescript": "^3.6.4"
+  }
+}
