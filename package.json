@@ -1,13 +1,12 @@
 {
   "name": "@fanfilmu/code-packager",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Serverless Component for language-agnostic code packaging",
   "main": "lib/main.js",
   "module": "lib/main.module.js",
   "repository": "https://github.com/fanfilmu/code-packager.git",
   "author": "Michał Begejowicz",
   "license": "MIT",
-  "private": false,
   "typings": "lib/main.d.ts",
   "scripts": {
     "build": "rollup -c",

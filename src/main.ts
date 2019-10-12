@@ -5,7 +5,7 @@ import rubyDriver from "./drivers/ruby";
 
 type CodePackagerInputs = RubyPackagerInputs;
 
-export class CodePackager extends Component {
+export default class CodePackager extends Component {
   async default(inputs: Partial<CodePackagerInputs>): Promise<CodePackagerOutputs> {
     switch(inputs.driver) {
       case "ruby":

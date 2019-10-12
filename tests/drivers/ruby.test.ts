@@ -4,7 +4,7 @@ import * as glob from "glob";
 
 import { RubyPackagerInputs, CodePackagerOutputs } from "../../src/interfaces";
 import { removeDir } from "../../src/drivers/common";
-import { CodePackager } from "../../src/main";
+import CodePackager from "../../src/main";
 
 describe("with Ruby Driver", () => {
   const inputs: RubyPackagerInputs = {
